@@ -1,8 +1,8 @@
 <?php
 
-$puzzleInput = trim(file_get_contents(__DIR__ . '/Day1_Puzzle.txt'));
+require_once('../functions.php');
 
-$puzzleArray = explode(PHP_EOL, $puzzleInput);
+$puzzleArray = getPuzzleArray('Day1');
 
 $result = 0;
 
