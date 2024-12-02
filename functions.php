@@ -6,3 +6,8 @@ function getPuzzleArray($day): array
 
     return explode(PHP_EOL, $puzzleInput);
 }
+
+function getTestArray($testInput): array
+{
+    return explode(PHP_EOL, $testInput);
+}
