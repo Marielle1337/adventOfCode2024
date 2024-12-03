@@ -11,3 +11,8 @@ function getTestArray($testInput): array
 {
     return explode(PHP_EOL, $testInput);
 }
+
+function getPuzzleText($day): string
+{
+    return trim(file_get_contents(__DIR__ . '/'. $day . '/Puzzle.txt'));
+}
