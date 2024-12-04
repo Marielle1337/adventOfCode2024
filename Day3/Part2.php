@@ -10,6 +10,15 @@ function resolve($input): int
     $result = 0;
     $canConsider = true;
 
+    /*$puzzleInput = preg_replace("#don't\(\)(.*?)do\(\)#", '', $input);
+
+    preg_match_all('#mul\(([0-9]*),([0-9]*)\)#', $puzzleInput, $matches);
+    var_dump($matches);
+
+    foreach ($matches[1] as $key => $value) {
+        $result += $matches[1][$key] * $matches[2][$key];
+    }*/
+
     preg_match_all("#mul\((\d+),(\d+)\)|do\(\)|don't\(\)#", $input, $matches);
 
     foreach ($matches[0] as $key => $match) {
